@@ -1,0 +1,66 @@
+.profile-container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  font-size: 1.6rem;
+  justify-content: center;
+}
+
+h2{
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.profile-bio{
+  background: rgb(56,211,159);
+  background: linear-gradient(45deg, rgba(56,211,159,1) 31%, rgba(36,211,193,1) 52%, rgba(56,211,159,1) 73%, rgba(0,212,255,1) 91%);
+  padding: 5rem;
+  text-align: center;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.profile-bio p{
+  margin-top: 1.5rem;
+}
+
+.profile-info{
+  padding: 2rem;
+  width: 60%;
+  background-color: #212529;;
+}
+
+.info{
+  margin: 1.5rem 0;
+}
+
+.info p{
+  color: #dedfe1;
+  font-size: 1.5rem;
+}
+
+.button-group, .button-group-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 680px){
+  .profile-container{
+    flex-direction: column;
+    width: 70%;
+  }
+  .profile-bio{
+    border-radius: 1rem 1rem 0 0;
+  }
+  .profile-info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .button-group{
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+  }
+}
